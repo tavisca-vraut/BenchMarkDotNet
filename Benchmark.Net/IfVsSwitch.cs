@@ -8,121 +8,116 @@ namespace Benchmark.Net
 {
     public class IfVsSwitch
     {
-        static int count = 100000;
-
         [Benchmark]
         public void If()
         {
-            for (int i = 0; i < count; i++)
+            Person temp = new Person
             {
-                Person temp = new Person
-                {
-                    Name = "Vighnesh",
-                    Age = 3600
-                };
+                Name = "Vighnesh",
+                Age = 3600
+            };
 
-                if (temp.Age == 100) { }
-                else if (temp.Age == 200) { }
-                else if (temp.Age == 300) { }
-                else if (temp.Age == 400) { }
-                else if (temp.Age == 500) { }
-                else if (temp.Age == 600) { }
-                else if (temp.Age == 700) { }
-                else if (temp.Age == 800) { }
-                else if (temp.Age == 900) { }
-                else if (temp.Age == 1000) { }
-                else if (temp.Age == 1100) { }
-                else if (temp.Age == 1200) { }
-                else if (temp.Age == 1300) { }
-                else if (temp.Age == 1400) { }
-                else if (temp.Age == 1500) { }
-                else if (temp.Age == 1600) { }
-                else if (temp.Age == 1700) { }
-                else if (temp.Age == 1800) { }
-                else if (temp.Age == 1900) { }
-                else if (temp.Age == 2000) { }
-                else if (temp.Age == 2100) { }
-                else if (temp.Age == 2200) { }
-                else if (temp.Age == 2300) { }
-                else if (temp.Age == 2400) { }
-                else if (temp.Age == 2500) { }
-                else if (temp.Age == 2600) { }
-                else if (temp.Age == 2700) { }
-                else if (temp.Age == 2800) { }
-                else if (temp.Age == 2900) { }
-                else if (temp.Age == 3000) { }
-                else if (temp.Age == 3100) { }
-                else if (temp.Age == 3200) { }
-                else if (temp.Age == 3300) { }
-                else if (temp.Age == 3400) { }
-                else if (temp.Age == 3500) { }
-                else if (temp.Age == 3600) { }
-                else if (temp.Age == 3700) { }
-                else if (temp.Age == 3800) { }
-                else if (temp.Age == 3900) { }
-                else if (temp.Age == 4000) { }
-                else if (temp.Age == 4100) { }
-                else if (temp.Age == 4200) { }
-                else if (temp.Age == 4300) { }
-                else if (temp.Age == 4400) { }
-                else if (temp.Age == 4500) { }
-                else if (temp.Age == 4600) { }
-                else if (temp.Age == 4700) { }
-                else if (temp.Age == 4800) { }
-                else if (temp.Age == 4900) { }
-                else if (temp.Age == 5000) { }
-                else if (temp.Age == 5100) { }
-                else if (temp.Age == 5200) { }
-                else if (temp.Age == 5300) { }
-                else if (temp.Age == 5400) { }
-                else if (temp.Age == 5500) { }
-                else if (temp.Age == 5600) { }
-                else if (temp.Age == 5700) { }
-                else if (temp.Age == 5800) { }
-                else if (temp.Age == 5900) { }
-                else if (temp.Age == 6000) { }
-                else if (temp.Age == 6100) { }
-                else if (temp.Age == 6200) { }
-                else if (temp.Age == 6300) { }
-                else if (temp.Age == 6400) { }
-                else if (temp.Age == 6500) { }
-                else if (temp.Age == 6600) { }
-                else if (temp.Age == 6700) { }
-                else if (temp.Age == 6800) { }
-                else if (temp.Age == 6900) { }
-                else if (temp.Age == 7000) { }
-                else if (temp.Age == 7100) { }
-                else if (temp.Age == 7200) { }
-                else if (temp.Age == 7300) { }
-                else if (temp.Age == 7400) { }
-                else if (temp.Age == 7500) { }
-                else if (temp.Age == 7600) { }
-                else if (temp.Age == 7700) { }
-                else if (temp.Age == 7800) { }
-                else if (temp.Age == 7900) { }
-                else if (temp.Age == 8000) { }
-                else if (temp.Age == 8100) { }
-                else if (temp.Age == 8200) { }
-                else if (temp.Age == 8300) { }
-                else if (temp.Age == 8400) { }
-                else if (temp.Age == 8500) { }
-                else if (temp.Age == 8600) { }
-                else if (temp.Age == 8700) { }
-                else if (temp.Age == 8800) { }
-                else if (temp.Age == 8900) { }
-                else if (temp.Age == 9000) { }
-                else if (temp.Age == 9100) { }
-                else if (temp.Age == 9200) { }
-                else if (temp.Age == 9300) { }
-                else if (temp.Age == 9400) { }
-                else if (temp.Age == 9500) { }
-                else if (temp.Age == 9600) { }
-                else if (temp.Age == 9700) { }
-                else if (temp.Age == 9800) { }
-                else if (temp.Age == 9900) { }
-                else if (temp.Age == 10000) { }
-                else { }
-            }
+            if (temp.Age == 100) { }
+            else if (temp.Age == 200) { }
+            else if (temp.Age == 300) { }
+            else if (temp.Age == 400) { }
+            else if (temp.Age == 500) { }
+            else if (temp.Age == 600) { }
+            else if (temp.Age == 700) { }
+            else if (temp.Age == 800) { }
+            else if (temp.Age == 900) { }
+            else if (temp.Age == 1000) { }
+            else if (temp.Age == 1100) { }
+            else if (temp.Age == 1200) { }
+            else if (temp.Age == 1300) { }
+            else if (temp.Age == 1400) { }
+            else if (temp.Age == 1500) { }
+            else if (temp.Age == 1600) { }
+            else if (temp.Age == 1700) { }
+            else if (temp.Age == 1800) { }
+            else if (temp.Age == 1900) { }
+            else if (temp.Age == 2000) { }
+            else if (temp.Age == 2100) { }
+            else if (temp.Age == 2200) { }
+            else if (temp.Age == 2300) { }
+            else if (temp.Age == 2400) { }
+            else if (temp.Age == 2500) { }
+            else if (temp.Age == 2600) { }
+            else if (temp.Age == 2700) { }
+            else if (temp.Age == 2800) { }
+            else if (temp.Age == 2900) { }
+            else if (temp.Age == 3000) { }
+            else if (temp.Age == 3100) { }
+            else if (temp.Age == 3200) { }
+            else if (temp.Age == 3300) { }
+            else if (temp.Age == 3400) { }
+            else if (temp.Age == 3500) { }
+            else if (temp.Age == 3600) { }
+            else if (temp.Age == 3700) { }
+            else if (temp.Age == 3800) { }
+            else if (temp.Age == 3900) { }
+            else if (temp.Age == 4000) { }
+            else if (temp.Age == 4100) { }
+            else if (temp.Age == 4200) { }
+            else if (temp.Age == 4300) { }
+            else if (temp.Age == 4400) { }
+            else if (temp.Age == 4500) { }
+            else if (temp.Age == 4600) { }
+            else if (temp.Age == 4700) { }
+            else if (temp.Age == 4800) { }
+            else if (temp.Age == 4900) { }
+            else if (temp.Age == 5000) { }
+            else if (temp.Age == 5100) { }
+            else if (temp.Age == 5200) { }
+            else if (temp.Age == 5300) { }
+            else if (temp.Age == 5400) { }
+            else if (temp.Age == 5500) { }
+            else if (temp.Age == 5600) { }
+            else if (temp.Age == 5700) { }
+            else if (temp.Age == 5800) { }
+            else if (temp.Age == 5900) { }
+            else if (temp.Age == 6000) { }
+            else if (temp.Age == 6100) { }
+            else if (temp.Age == 6200) { }
+            else if (temp.Age == 6300) { }
+            else if (temp.Age == 6400) { }
+            else if (temp.Age == 6500) { }
+            else if (temp.Age == 6600) { }
+            else if (temp.Age == 6700) { }
+            else if (temp.Age == 6800) { }
+            else if (temp.Age == 6900) { }
+            else if (temp.Age == 7000) { }
+            else if (temp.Age == 7100) { }
+            else if (temp.Age == 7200) { }
+            else if (temp.Age == 7300) { }
+            else if (temp.Age == 7400) { }
+            else if (temp.Age == 7500) { }
+            else if (temp.Age == 7600) { }
+            else if (temp.Age == 7700) { }
+            else if (temp.Age == 7800) { }
+            else if (temp.Age == 7900) { }
+            else if (temp.Age == 8000) { }
+            else if (temp.Age == 8100) { }
+            else if (temp.Age == 8200) { }
+            else if (temp.Age == 8300) { }
+            else if (temp.Age == 8400) { }
+            else if (temp.Age == 8500) { }
+            else if (temp.Age == 8600) { }
+            else if (temp.Age == 8700) { }
+            else if (temp.Age == 8800) { }
+            else if (temp.Age == 8900) { }
+            else if (temp.Age == 9000) { }
+            else if (temp.Age == 9100) { }
+            else if (temp.Age == 9200) { }
+            else if (temp.Age == 9300) { }
+            else if (temp.Age == 9400) { }
+            else if (temp.Age == 9500) { }
+            else if (temp.Age == 9600) { }
+            else if (temp.Age == 9700) { }
+            else if (temp.Age == 9800) { }
+            else if (temp.Age == 9900) { }
+            else if (temp.Age == 10000) { }
+            else { }
         }
 
         [Benchmark]
