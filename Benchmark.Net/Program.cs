@@ -31,8 +31,8 @@ namespace Benchmark.Net
 
 
             //BenchmarkRunner.Run<StringVsStringBuilder>();
-            BenchmarkRunner.Run<ForVsWhileLoop>();
-            //BenchmarkRunner.Run<IfVsSwitch>();
+            //BenchmarkRunner.Run<ForVsWhileLoop>();
+            BenchmarkRunner.Run<IfVsSwitch>();
             Console.ReadKey(true);
         }
     }
