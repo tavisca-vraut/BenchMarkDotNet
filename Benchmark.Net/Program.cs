@@ -29,7 +29,10 @@ namespace Benchmark.Net
             //    }
             //}
 
-            BenchmarkRunner.Run<CsvValueReader>();
+
+            //BenchmarkRunner.Run<StringVsStringBuilder>();
+            BenchmarkRunner.Run<ForVsWhileLoop>();
+            //BenchmarkRunner.Run<IfVsSwitch>();
             Console.ReadKey(true);
         }
     }

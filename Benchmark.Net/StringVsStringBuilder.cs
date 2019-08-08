@@ -5,18 +5,7 @@ using System.Text;
 
 namespace Benchmark.Net
 {
-    public class Person
-    {
-        public string Name { get; set; }
-        public int Age { get; set; }
-
-        public override string ToString()
-        {
-
-            return $"{Name}: {Age}";
-        }
-    }
-    public class CsvValueReader
+    public class StringVsStringBuilder
     {
         public static string filePath = @"C:\TaviscaDev\Benchmark.Net\Benchmark.Net\testset.csv";
 
